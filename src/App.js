@@ -1,10 +1,15 @@
 import React from 'react';
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 function App() {
   return (
-    <div style={{ fontFamily: 'montserrat' }}>
-      App Placeholder
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/search">Search</Route>
+        <Route path="/">Home</Route>
+      </Switch>
+    </Router>
   );
 }
 
