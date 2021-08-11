@@ -24,9 +24,48 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts">
+    <style>
+      /* montserrat-regular - latin */
+      @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        src: url('./fonts/montserrat-v18-latin-regular.eot'); /* IE9 Compat Modes */
+        src: local(''),
+            url('./fonts/montserrat-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./fonts/montserrat-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('./fonts/montserrat-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+            url('./fonts/montserrat-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/montserrat-v18-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+      }
+      /* montserrat-500italic - latin */
+      @font-face {
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 500;
+        src: url('./fonts/montserrat-v18-latin-500italic.eot'); /* IE9 Compat Modes */
+        src: local(''),
+            url('./fonts/montserrat-v18-latin-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./fonts/montserrat-v18-latin-500italic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('./fonts/montserrat-v18-latin-500italic.woff') format('woff'), /* Modern Browsers */
+            url('./fonts/montserrat-v18-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/montserrat-v18-latin-500italic.svg#Montserrat') format('svg'); /* Legacy iOS */
+      }
+      /* bitter-regular - latin */
+      @font-face {
+        font-family: 'Bitter';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/bitter-v19-latin-regular.eot'); /* IE9 Compat Modes */
+        src: local(''),
+            url('../fonts/bitter-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/bitter-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/bitter-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/bitter-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/bitter-v19-latin-regular.svg#Bitter') format('svg'); /* Legacy iOS */
+      }
+    </style>
     <title>React App</title>
   </head>
   <body>
