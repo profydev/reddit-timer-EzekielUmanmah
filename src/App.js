@@ -6,12 +6,15 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/globals';
 import theme from './styles/theme';
 
+import Header from './Components/Header';
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
         <Normalize />
         <GlobalStyles />
+        <Header />
         <h1>Reddit Analytics</h1>
         <Switch>
           <Route path="/search">Search</Route>
