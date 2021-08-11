@@ -1,17 +1,25 @@
 import React from 'react';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Normalize } from 'styled-normalize';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from './styles/globals';
+import theme from './styles/theme';
 
 function App() {
   return (
-    <Router>
-      <div style={{ fontFamily: 'montserrat' }}>This is a test of the fonts</div>
-      <div style={{ fontFamily: 'bitter' }}>This is a test of the fonts</div>
-      <Switch>
-        <Route path="/search">Search</Route>
-        <Route path="/">Home</Route>
-      </Switch>
-    </Router>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Normalize />
+        <GlobalStyles />
+        <h1>Reddit Analytics</h1>
+        <Switch>
+          <Route path="/search">Search</Route>
+          <Route path="/">Home</Route>
+          <Route>404 - Not Found</Route>
+        </Switch>
+      </Router>
+    </ThemeProvider>
   );
 }
 

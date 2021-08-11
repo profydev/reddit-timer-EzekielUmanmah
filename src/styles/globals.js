@@ -1,16 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
-import { normalize } from 'styled-normalize';
 
 const GlobalStyles = createGlobalStyle`
-    ${normalize};
-
     body {
         background: teal;
-        font-size: 1.6rem;
-        font-family: montserrat;
+        font-family: ${(props) => props.theme.font.main};
+        line-height: ${(props) => props.theme.font.lineHieght};
+        font-size: ${(props) => props.theme.font.fontSize};
     }
-    a {
-        text-decoration: none;
+    h1 {
+        font-family: ${(props) => props.theme.font.title};
     }
 `;
 
