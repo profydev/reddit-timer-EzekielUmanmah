@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/globals';
 import theme from './styles/theme';
 
-import Header from './Components/Header';
+import Header from './Components/Header/Header';
 
 function App() {
   return (
