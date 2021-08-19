@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { ReactComponent } from './redditLogo.svg';
 
 export const Container = styled.header`
     display: flex;
@@ -11,7 +12,7 @@ export const Container = styled.header`
     font-size: .9rem;
 `;
 
-export const Logo = styled(Link)`
+export const Logo = styled(ReactComponent)`
     position: relative;
     left: -10px;
 `;
