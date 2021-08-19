@@ -16,20 +16,7 @@ export const Logo = styled(Link)`
     left: -10px;
 `;
 
-export const RouterLink = styled(Link)`
-    text-decoration: none;
-    transition: 0.4s ease;
-    &:visited {
-        color: inherit;
-    }
-    &:hover {
-        color: #fff;
-        opacity: 1;
-        cursor: pointer;
-    }
-`;
-
-export const NavLinkContainer = styled.ul`
+export const NavLinkContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +25,7 @@ export const NavLinkContainer = styled.ul`
     width: 232px;
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
     text-decoration: none;
     transition: 0.4s ease;
     &:visited {

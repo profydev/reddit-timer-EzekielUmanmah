@@ -17,7 +17,9 @@ function App() {
         <Header />
         <h1>Reddit Analytics</h1>
         <Switch>
-          <Route path="/search">Search</Route>
+          <Route path="/how-it-works"><h1>How it works</h1></Route>
+          <Route path="/search"><h1>Search</h1></Route>
+          <Route path="/about"><h1>About</h1></Route>
           <Route path="/">Home</Route>
           <Route>404 - Not Found</Route>
         </Switch>

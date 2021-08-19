@@ -1,0 +1,95 @@
+[33mcommit ce632d967183ac4aab8234f75a45b564d23a5acf[m[33m ([m[1;36mHEAD -> [m[1;32mheader[m[33m, [m[1;31morigin/header[m[33m)[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Sun Aug 15 21:40:17 2021 -0400
+
+    change header container to <header>
+    change Search route to /search/javascript
+
+[33mcommit 0c25e800f56cf4f3ea0eb42fbf01523c73e3ee4f[m
+Merge: c37d6d3 11faf7f
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Sun Aug 15 21:09:46 2021 -0400
+
+    Merge branch 'main' into header
+
+[33mcommit c37d6d3a7af1478eae439ab444bb5de2113c65b5[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Sun Aug 15 15:59:56 2021 -0400
+
+    svg logo is a link that points to home, 'how-it-works' and 'about' links point to corresponding sections on home via url hashes, 'search' is a link and points to Search page
+
+[33mcommit 11faf7f3daaa9a0d3d7fe71ba084cd1971946986[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: EzekielUmanmah <66026026+EzekielUmanmah@users.noreply.github.com>
+Date:   Wed Aug 11 14:04:14 2021 -0400
+
+    Create app skeleton (#1)
+    
+    * initial setup - update deps./eslint rule
+    
+    * install fonts from Google Fonts
+    
+    * reset default browser styles with styled-normalize
+    
+    * add global styles with createGlobalStyle
+    
+    * add router with routes / and /search
+    
+    * install self-hosted fonts
+    
+    * reformat app structure, styled-component/theming
+    
+    * change app title and add logo images
+
+[33mcommit 72bc7959bda3a50dfbe8f5e3dda3b7df1c6e3681[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Wed Aug 11 13:27:35 2021 -0400
+
+    add Header Component
+
+[33mcommit 8e1e20055f16008d21b38d1df31eaebb497cb2c9[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Wed Aug 11 13:16:08 2021 -0400
+
+    reformat app structure, styled-component/theming
+
+[33mcommit e98e1ba6e38ad0cdf32cf5ba48fa9d57747ce7e3[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Wed Aug 11 08:24:02 2021 -0400
+
+    install self-hosted fonts
+
+[33mcommit 23ad824de27393d8006d397768eeed1b7f68c14f[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Tue Aug 10 10:23:11 2021 -0400
+
+    add router with routes / and /search
+
+[33mcommit 3d517ae30dd0cf28125479bafba9aac607b530b9[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Tue Aug 10 10:02:44 2021 -0400
+
+    add global styles with createGlobalStyle
+
+[33mcommit c86ac4be9c938b700f0a72fe5e087b98e40f58f8[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Tue Aug 10 09:28:27 2021 -0400
+
+    reset default browser styles with styled-normalize
+
+[33mcommit da7dd7473a7805641dd5d60cd7123d0738c71076[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Tue Aug 10 08:54:41 2021 -0400
+
+    install fonts from Google Fonts
+
+[33mcommit d1118eda6de810e915b71acb6fd6e03fc62a7de9[m
+Author: EzekielUmanmah <umanmah234@gmail.com>
+Date:   Tue Aug 10 08:07:11 2021 -0400
+
+    initial setup - update deps./eslint rule
+
+[33mcommit 3f35ee7cd80ca49e80ddea61893028cb521526bc[m
+Author: Tara from Profy.dev <78340775+mentor-tara@users.noreply.github.com>
+Date:   Mon Aug 9 17:49:15 2021 +0200
+
+    Initial commit
