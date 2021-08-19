@@ -20,7 +20,7 @@ function App() {
           <Route path="/how-it-works"><h1>How it works</h1></Route>
           <Route path="/search"><h1>Search</h1></Route>
           <Route path="/about"><h1>About</h1></Route>
-          <Route path="/">Home</Route>
+          <Route path="/"><h1>Home</h1></Route>
           <Route>404 - Not Found</Route>
         </Switch>
       </Router>
