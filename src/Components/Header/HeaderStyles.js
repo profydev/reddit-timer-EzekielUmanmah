@@ -28,13 +28,6 @@ export const NavLinkContainer = styled.nav`
 
 export const NavLink = styled(Link)`
     text-decoration: none;
-    &:visited {
-        color: inherit;
-    }
-`;
-
-export const PageLink = styled.a`
-    text-decoration: none;
     transition: 0.4s ease;
     &:visited {
         color: inherit;

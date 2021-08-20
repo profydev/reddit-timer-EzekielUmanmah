@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import {
-  Container, NavLink, Logo, NavLinkContainer, PageLink,
+  Container, NavLink, Logo, NavLinkContainer,
 } from './HeaderStyles';
 
 const Header = () => (
@@ -10,8 +10,8 @@ const Header = () => (
     <Link to="/"><Logo /></Link>
     <NavLinkContainer>
       <li><NavLink to="/search/javascript">Search</NavLink></li>
-      <li><PageLink href="/#how-it-works">How it works</PageLink></li>
-      <li><PageLink href="/#about">About</PageLink></li>
+      <li><NavLink to="/#how-it-works">How it works</NavLink></li>
+      <li><NavLink to="/#about">About</NavLink></li>
     </NavLinkContainer>
   </Container>
 );
