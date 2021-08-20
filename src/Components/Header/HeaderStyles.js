@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import { ReactComponent } from './redditLogo.svg';
 
 export const Container = styled.header`
@@ -27,6 +27,13 @@ export const NavLinkContainer = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
+    text-decoration: none;
+    &:visited {
+        color: inherit;
+    }
+`;
+
+export const PageLink = styled.a`
     text-decoration: none;
     transition: 0.4s ease;
     &:visited {
