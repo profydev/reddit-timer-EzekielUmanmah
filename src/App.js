@@ -9,6 +9,7 @@ import GlobalStyles from './styles/globals';
 import theme from './styles/theme';
 
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route>404 - Not Found</Route>
         </Switch>
       </main>
+      <Footer />
     </ThemeProvider>
   );
 }
