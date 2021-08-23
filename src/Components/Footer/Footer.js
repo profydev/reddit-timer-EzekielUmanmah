@@ -7,7 +7,7 @@ const Footer = () => (
   <Container>
     <FooterLink to={{ pathname: 'https://profy.dev/employers' }} target="_blank">profy.dev</FooterLink>
     <Link to="/"><Logo /></Link>
-    <FooterLink to="/terms">Terms & Policy</FooterLink>
+    <FooterLink to="/terms">Terms &amp; Privacy</FooterLink>
   </Container>
 );
 
