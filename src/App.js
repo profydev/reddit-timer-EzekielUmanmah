@@ -23,7 +23,6 @@ function App() {
         <Switch>
           <Route path="/search"><h1>Search</h1></Route>
           <Route path="/">
-            <h1>Home</h1>
             <Hero />
           </Route>
           <Route>404 - Not Found</Route>

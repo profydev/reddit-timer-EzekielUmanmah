@@ -12,4 +12,11 @@ export default {
     headerHeight: '100px',
     footerHeight: '100px',
   },
+  color: {
+    text: '#93918f',
+    dark: '#000000',
+    midDark: '#636363',
+    midLight: '#d5d5d5',
+    light: '#ffffff',
+  },
 };

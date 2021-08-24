@@ -23,6 +23,6 @@ export const FooterLink = styled(Link)`
         color: inherit;
     }
     &:hover {
-        color: white;
+        color: ${(props) => props.theme.color.midLight};
     }
 `;
