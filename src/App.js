@@ -10,6 +10,7 @@ import theme from './styles/theme';
 
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import { Container } from './AppStyles';
 
 function App() {
   return (
@@ -17,13 +18,13 @@ function App() {
       <Normalize />
       <GlobalStyles />
       <Header />
-      <main>
+      <Container>
         <Switch>
           <Route path="/search"><h1>Search</h1></Route>
           <Route path="/"><h1>Home</h1></Route>
           <Route>404 - Not Found</Route>
         </Switch>
-      </main>
+      </Container>
       <Footer />
     </ThemeProvider>
   );

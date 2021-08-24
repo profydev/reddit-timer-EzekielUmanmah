@@ -7,14 +7,12 @@ export const Container = styled.header`
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    height: 89px;
-    width: 1120px;
-    font-size: .9rem;
+    width: 90vw;
+    height: ${(props) => props.theme.size.headerHeight};
 `;
 
 export const Logo = styled(ReactComponent)`
-    position: relative;
-    left: -10px;
+    
 `;
 
 export const NavLinkContainer = styled.nav`
@@ -22,13 +20,13 @@ export const NavLinkContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     position: relative;
-    right: -9.5px;
-    width: 232px;
 `;
 
 export const NavLink = styled(Link)`
+    font-size: ${(props) => props.theme.font.size.small};
     text-decoration: none;
     transition: 0.4s ease;
+    margin-left: 20px;
     &:visited {
         color: inherit;
     }

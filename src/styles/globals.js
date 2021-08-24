@@ -1,17 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
     body {
         background: teal;
+        font-size: ${(props) => props.theme.font.size.default};
         font-family: ${(props) => props.theme.font.main};
         line-height: ${(props) => props.theme.font.lineHieght};
-        //font-size: ${(props) => props.theme.font.fontSize};
     }
     h1 {
         font-family: ${(props) => props.theme.font.title};
-    }
-    a {
-        //text-decoration: none;
     }
     li {
         list-style: none;

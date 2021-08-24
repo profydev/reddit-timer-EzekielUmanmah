@@ -10,9 +10,13 @@ export const Logo = styled(ReactComponent)`
 export const Container = styled.footer`
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: ${(props) => props.theme.size.footerHeight};
+    margin: 0 auto;
 `;
 
 export const FooterLink = styled(Link)`
+    font-size: ${(props) => props.theme.font.size.small};
     text-decoration: none;
     transition: .4s ease;
     &:visited {
