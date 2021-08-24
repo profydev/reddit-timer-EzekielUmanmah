@@ -11,6 +11,7 @@ import theme from './styles/theme';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import { Container } from './AppStyles';
+import Hero from './Components/Hero/Hero';
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
       <Container>
         <Switch>
           <Route path="/search"><h1>Search</h1></Route>
-          <Route path="/"><h1>Home</h1></Route>
+          <Route path="/">
+            <h1>Home</h1>
+            <Hero />
+          </Route>
           <Route>404 - Not Found</Route>
         </Switch>
       </Container>
