@@ -11,7 +11,7 @@ import theme from './styles/theme';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import { Container } from './AppStyles';
-import Hero from './Components/Hero/Hero';
+import Home from './Components/Home/Home';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Switch>
           <Route path="/search"><h1>Search</h1></Route>
           <Route path="/">
-            <Hero />
+            <Home />
           </Route>
           <Route>404 - Not Found</Route>
         </Switch>

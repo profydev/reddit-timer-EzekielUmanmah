@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
-export const Container = styled.main`
+export const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +21,7 @@ export const Subtitle = styled.h3`
     ${styles}
     font-size: ${(props) => props.theme.font.size.small};
     color: ${(props) => props.theme.color.text};
+    letter-spacing: 1.5px;
 `;
 
 export const StyledLink = styled(Link)`
@@ -33,8 +34,9 @@ export const StyledLink = styled(Link)`
     font-size: ${(props) => props.theme.font.size.small};
 `;
 
-export const ImgLink = styled(Link)`
-    ${styles}
+export const Image = styled.img`
+    width: 100%;
+    max-width: 1114px;
 `;
 
 export const Para = styled(Subtitle)`

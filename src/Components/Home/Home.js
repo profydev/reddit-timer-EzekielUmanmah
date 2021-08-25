@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import * as S from './HeroStyles';
+import * as S from './HomeStyles';
 import heatmap from './table.png';
 
 const Hero = () => (
@@ -11,7 +12,7 @@ const Hero = () => (
     </S.Subtitle>
     <S.StyledLink to="/search/javascript">Show me the best time</S.StyledLink>
     <S.Para>r/javascript</S.Para>
-    <S.ImgLink to="/search/javascript"><img src={heatmap} alt="heatmap" width="90%" /></S.ImgLink>
+    <Link to="/search/javascript"><S.Image src={heatmap} alt="heatmap" /></Link>
   </S.Container>
 );
 
