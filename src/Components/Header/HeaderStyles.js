@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components';
 import { ReactComponent } from './redditLogo.svg';
 
@@ -22,7 +22,7 @@ export const NavLinkContainer = styled.nav`
     position: relative;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(HashLink)`
     font-size: ${(props) => props.theme.font.size.small};
     text-decoration: none;
     transition: 0.4s ease;

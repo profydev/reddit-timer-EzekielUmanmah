@@ -4,6 +4,9 @@ const GlobalStyles = createGlobalStyle`
     *, *::before, *::after {
         box-sizing: border-box;
     }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
         background: #f2f2eb;
         font-size: ${(props) => props.theme.font.size.default};
