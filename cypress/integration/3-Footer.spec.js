@@ -18,10 +18,11 @@ describeOnBranches('footer')('Footer', () => {
   });
 
   it('Contains Terms & Privacy link "/terms"', () => {
+    // eslint-disable-next-line cypress/no-force
     cy
       .get('footer')
       .contains('Terms & Privacy')
-      .click();
+      .click({ force: true });
     cy.url().should('equal', `${Cypress.config().baseUrl}/terms`);
   });
 });
