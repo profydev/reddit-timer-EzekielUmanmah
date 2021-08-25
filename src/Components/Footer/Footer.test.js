@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route } from 'react-router-dom';
 
@@ -26,7 +26,8 @@ describe('Footer links', () => {
   test('profy.dev link points to correct url', () => {
     setup();
 
-    const link = screen.getByRole('link', { name: /profy\.dev/i });
+    const container = document.querySelector('footer');
+    const link = within(container).getByRole('link', { name: /profy\.dev/i });
     userEvent.click(link);
 
     expect(link).toHaveAttribute('href', 'https://profy.dev/employers');

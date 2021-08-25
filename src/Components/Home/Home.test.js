@@ -1,5 +1,5 @@
 import React from 'react';
-import { screen, render } from '@testing-library/react';
+import { screen, render, within } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 
@@ -41,5 +41,24 @@ describe('Hero section links', () => {
 
     expect(screen.getByRole('heading', { name: /search/i })).toBeInTheDocument();
     expect(history.location.pathname).toBe('/search/javascript');
+  });
+});
+
+describe('"About" article links', () => {
+  test('profy.dev link points to an external page', () => {
+    setup();
+
+    const container = screen.getByText(/this app was created during/i);
+    const link = within(container).getByRole('link', { name: /profy\.dev/i });
+
+    expect(link).toHaveAttribute('href', 'https://profy.dev');
+  });
+
+  test('"Click here for more information." link points to external page', () => {
+    setup();
+
+    const link = screen.getByText(/Click here for more information\./i);
+
+    expect(link).toHaveAttribute('href', 'https://profy.dev/employers');
   });
 });
