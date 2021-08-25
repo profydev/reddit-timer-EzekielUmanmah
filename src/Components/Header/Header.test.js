@@ -28,7 +28,7 @@ describe('Header', () => {
     const logo = screen.getByRole('link', { name: /redditLogo\.svg/i });
     userEvent.click(logo);
 
-    expect(screen.getByRole('heading', { name: /home/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /no reactions/i })).toBeInTheDocument();
   });
 
   test('Search points to the Search page', () => {

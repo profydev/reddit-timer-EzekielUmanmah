@@ -1,3 +1,5 @@
 {
-    "svg.preview.background": "white"
+    "svg.preview.background": "white",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
 }

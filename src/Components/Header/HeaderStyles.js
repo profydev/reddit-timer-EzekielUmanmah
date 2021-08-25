@@ -31,7 +31,7 @@ export const NavLink = styled(Link)`
         color: inherit;
     }
     &:hover {
-        color: #fff;
+        color: ${(props) => props.theme.color.midLight};
         opacity: 1;
         cursor: pointer;
     }

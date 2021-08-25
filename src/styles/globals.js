@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-        background: teal;
+        background: #f2f2eb;
         font-size: ${(props) => props.theme.font.size.default};
         font-family: ${(props) => props.theme.font.main};
         line-height: ${(props) => props.theme.font.lineHieght};
