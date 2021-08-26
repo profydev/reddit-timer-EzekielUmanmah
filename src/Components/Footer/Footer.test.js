@@ -45,7 +45,8 @@ describe('Footer links', () => {
   test('Terms & Privacy points to /terms', () => {
     const { history } = setup();
 
-    const link = screen.getByRole('link', { name: /terms & privacy/i });
+    const footer = document.querySelector('footer');
+    const link = within(footer).getByRole('link', { name: /terms & privacy/i });
     userEvent.click(link);
 
     expect(history.location.pathname).toBe('/terms');

@@ -22,7 +22,7 @@ describeOnBranches('info-section')('Info Section', () => {
       .contains('How it works')
       .click();
     // eslint-disable-next-line cypress/no-unnecessary-waiting
-    // cy.wait(1000);
+    cy.wait(1000);
     cy.window().then(($window) => {
       // scroll should be greater than any number
       expect($window.scrollY).to.be.greaterThan(100);
@@ -34,7 +34,7 @@ describeOnBranches('info-section')('Info Section', () => {
       .contains('About')
       .click();
     // eslint-disable-next-line cypress/no-unnecessary-waiting
-    // cy.wait(1000);
+    cy.wait(1000);
     cy.window().then(($window) => {
       // scroll should be greater than any number
       expect($window.scrollY).to.be.greaterThan(100);
