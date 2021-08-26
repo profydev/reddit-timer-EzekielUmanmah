@@ -21,7 +21,8 @@ describeOnBranches('footer')('Footer', () => {
     cy
       .get('footer')
       .contains('Terms & Privacy')
-      .click();
+      .click()
+      .debug();
     cy.url().should('equal', `${Cypress.config().baseUrl}/terms`);
   });
 });
