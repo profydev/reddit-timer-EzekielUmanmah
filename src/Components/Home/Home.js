@@ -1,19 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import * as S from './HomeStyles';
-import heatmap from './table.png';
+import HeroSection from './HeroSection/HeroSection';
+import InfoSection from './InfoSection/InfoSection';
 
-const Hero = () => (
-  <S.Container>
-    <S.Title>No reactions to your reddit posts?</S.Title>
-    <S.Subtitle>
-      Great timing, great results! Find the best time to post on your subreddit.
-    </S.Subtitle>
-    <S.StyledLink to="/search/javascript">Show me the best time</S.StyledLink>
-    <S.Para>r/javascript</S.Para>
-    <Link to="/search/javascript"><S.Image src={heatmap} alt="heatmap" /></Link>
-  </S.Container>
+const Home = () => (
+  <>
+    <HeroSection />
+    <InfoSection />
+  </>
 );
 
-export default Hero;
+export default Home;
