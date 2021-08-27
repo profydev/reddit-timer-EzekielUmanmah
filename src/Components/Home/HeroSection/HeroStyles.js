@@ -43,37 +43,3 @@ export const Image = styled.img`
 export const Para = styled(Subtitle)`
   margin: 30px 0;
 `;
-
-export const Article = styled.article`
-  max-width: 738px;
-  width: 100%;
-  margin: 20px 0;
-  padding: 20px;
-  >* { text-align: left; }
-`;
-
-export const ArticleHeadline = styled.h2`
-  font-size: ${(props) => props.theme.font.size.default};
-  font-family: ${(props) => props.theme.font.title};
-  letter-spacing: 1.5px;
-`;
-
-export const Paragraph = styled.p`
-  font-size: ${(props) => props.theme.font.size.small};
-  color: ${(props) => props.theme.color.text};
-  letter-spacing: 1px;
-  line-height: ${(props) => props.theme.font.lineHeight};
-`;
-
-export const A = styled.a`
-  text-decoration: none;
-  color: blue;
-`;
-
-export const Item = styled.li`
-  margin-left: 2px;
-  list-style: inside; 
-  line-height: ${(props) => props.theme.font.lineHeight};
-  font-size: ${(props) => props.theme.font.size.small};
-  color: ${(props) => props.theme.color.text};
-`;
