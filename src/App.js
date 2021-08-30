@@ -12,6 +12,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import { Container } from './AppStyles';
 import Home from './Components/Home/Home';
+import Search from './Components/Search/Search';
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
       <Header />
       <Container>
         <Switch>
-          <Route path="/search"><h1>Search</h1></Route>
+          <Route path="/search">
+            <Search />
+          </Route>
           <Route path="/">
             <Home />
           </Route>

@@ -29,7 +29,7 @@ describe('Hero section links', () => {
     const link = screen.getByRole('link', { name: /show me the best time/i });
     userEvent.click(link);
 
-    expect(screen.getByRole('heading', { name: /search/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /search/i })).toBeInTheDocument();
     expect(history.location.pathname).toBe('/search/javascript');
   });
 
@@ -39,7 +39,7 @@ describe('Hero section links', () => {
     const img = screen.getByRole('img');
     userEvent.click(img);
 
-    expect(screen.getByRole('heading', { name: /search/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /search/i })).toBeInTheDocument();
     expect(history.location.pathname).toBe('/search/javascript');
   });
 });

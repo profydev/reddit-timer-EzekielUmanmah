@@ -37,7 +37,7 @@ describe('Header', () => {
     const search = screen.getByRole('link', { name: /search/i });
     userEvent.click(search);
 
-    expect(screen.getByRole('heading', { name: /search/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /search/i })).toBeInTheDocument();
     expect(history.location.pathname).toBe('/search/javascript');
   });
 
